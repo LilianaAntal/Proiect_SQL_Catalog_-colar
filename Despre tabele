@@ -1,0 +1,8 @@
+Baza de date este formata din 7 tabele:
+  1. Elevi - numele si prenumele, data nasterii a fiecaru elev
+  2. Clase - numele clasei (exemplu III_C, II_A, V_B, VII_D...), invatator/diriginte
+  3. Profesori - numele si prenumele profesorului, materia predata
+  4. Materii - numele materiei, numele profesorului
+  5. Note - note de la 1 la 10, calificative (FB=Foarte bine, B=Bine, S=Suficient, I=Insuficient)
+  6. Absente - data, materia, numele elevului
+  7. Catalog - fiecare clasa are un catalog cu numele elevilor, materii, note si absente
