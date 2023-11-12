@@ -1,5 +1,5 @@
 Baza de date este formata din 7 tabele:
-  1. Elevi - numele si prenumele, data nasterii a fiecaru elev
+  1. Elevi - numele si prenumele, data nasterii a fiecarui elev
   2. Clase - numele clasei (exemplu III_C, II_A, V_B, VII_D...), invatator/diriginte
   3. Profesori - numele si prenumele profesorului, materia predata
   4. Materii - numele materiei, numele profesorului
