@@ -2,4 +2,4 @@
 Acest proiect este versiunea electronică a catalogului școlar tradițional, care stocheaza informații despre elevi, profesori, materii, note și absențe.
 
 # Diagrama
-![Diagrama_Catalog_Scolar](https://github.com/LilianaAntal/Proiect_SQL_Catalog_Scolar/assets/28876531/be060fec-71eb-4b77-b90e-de8840f004f5)
+![Diagrama_Catalog_Scolar](https://github.com/LilianaAntal/Proiect_SQL_Catalog_Scolar/assets/28876531/97698b6b-e677-4113-bd05-1147c355c54a)
