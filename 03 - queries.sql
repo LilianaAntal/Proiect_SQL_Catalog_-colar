@@ -46,7 +46,7 @@ select Clase.Clasa, Elevi.Nume, Elevi.Prenume, Materii.Nume_materie,
 	   'Nota/Calificativ' = case 
 								when [Catalog].id_nota <=10 
 									then cast(Note.Nota as varchar(2))
-									else Note.Calificativ
+								else Note.Calificativ
 				            end
 from [Catalog]
 join Clase
@@ -57,3 +57,41 @@ join Materii
 	on [Catalog].id_materie = Materii.id_materie
 join Note
 	on [Catalog].id_nota = Note.id_nota;
+
+--Afisarea elevilor (ordonati dupa numele clasei) cu nota la biologie:
+select Clase.Clasa, Elevi.Nume, Elevi.Prenume, Materii.Nume_materie, 
+	   'Nota/Calificativ' = case 
+								when [Catalog].id_nota <=10 
+									then cast(Note.Nota as varchar(2))
+								else Note.Calificativ
+				            end
+from [Catalog]
+join Clase
+	on [Catalog].id_clasa = Clase.id_clasa
+join Elevi
+	on [Catalog].id_elev = Elevi.id_elev
+join Materii
+	on [Catalog].id_materie = Materii.id_materie
+join Note
+	on [Catalog].id_nota = Note.id_nota
+where Materii.Nume_materie = 'Biologie'
+order by Clase.Clasa;
+
+--Afisarea notelor elevilor unei clase VI_C, elevii sa fie ordonati alfabetic:
+select Clase.Clasa, Elevi.Nume, Elevi.Prenume, Materii.Nume_materie, 
+	   'Nota/Calificativ' = case 
+								when [Catalog].id_nota <=10 
+									then cast(Note.Nota as varchar(2))
+								else Note.Calificativ
+				            end
+from [Catalog]
+join Clase
+	on [Catalog].id_clasa = Clase.id_clasa
+join Elevi
+	on [Catalog].id_elev = Elevi.id_elev
+join Materii
+	on [Catalog].id_materie = Materii.id_materie
+join Note
+	on [Catalog].id_nota = Note.id_nota
+where Clase.Clasa = 'VI_C'
+order by Elevi.Nume, Elevi.Prenume;
